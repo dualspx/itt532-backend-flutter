@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    
+    <title>Login</title>
+</head>
+<body>
+	<div class="container align-content-center md-4">
+    <br><br>
+		<h1>WELCOME!!</h1>
+    <br>
+	</div>
+	<br>
+	<br>
+    <!--Login start-->
+    <div class="container align-content-center md-4">
+      <form action="/project" method="post">
+        <label for="pname">Project name: </label><br>
+        <input type="text" id="pname" name="pname" required><br>
+        <label for="description">Project description: </label><br>
+        <input type="text" id="description" name="description" required><br>
+        <label for="deadline">Deadline: </label><br>
+        <input type="date" id="deadline" name="deadline" required><br>
+        
+        <label for="member">Member: </label><br>
+          <input type="checkbox" id="member" name="member" value="samad">
+          <label for="samad">samad</label><br>
+          <input type="checkbox" id="member" name="member" value="wiwi">
+          <label for="wiwi">wiwi</label><br>
+          <input type="checkbox" id="member" name="member" value="elvi">
+          <label for="elvi">elvi</label><br>
+        <label for="media" >Upload media: </label><br>
+        <input type="file" id="media" name="media"><br>
+        <label for="status">Status:</label><br>
+        <input list="status" name="status" required><br>
+        <datalist id="status">
+          <option value="pending">
+          <option value="on going">
+          <option value="completed">
+        </datalist>
+        <br>
+        <label for="admin">Admin name: </label><br>
+        <input type="text" id="admin" name="admin" required><br>
+        <input type="submit" value="Create project">
+      </form>
+    </div>
+    <!--Login end-->
+</body>
+</html>
